@@ -1,6 +1,8 @@
-# Pattern Lab Node - Gulp Edition
+# MyUW Pattern Lab
 
-The Gulp wrapper around [Pattern Lab Node Core](https://github.com/pattern-lab/patternlab-node) providing tasks to interact with the core library and move supporting frontend assets.
+The MyUW Pattern Lab is based on [Pattern Lab Node - Gulp Edition](https://github.com/pattern-lab/edition-node-gulp) with the [Mustache Demo Starterkit](https://github.com/pattern-lab/starterkit-mustache-demo).
+
+
 
 ## Packaged Components
 
@@ -21,52 +23,19 @@ It's also highly recommended that you [install gulp](hhttps://github.com/gulpjs/
 
 ## Installing
 
-There are two methods for downloading and installing the Gulp Edition:
-
-* [Download a pre-built package](#download-a-pre-built-package)
-* [Use npm](#use-npm)
-
-### Download a pre-built package
-
-The fastest way to get started with the Gulp Edition is to [download the pre-built version](https://github.com/pattern-lab/edition-node-gulp/releases) from the [releases page](https://github.com/pattern-lab/edition-node-gulp/releases). The pre-built project comes with the [Base Starterkit for Mustache](https://github.com/pattern-lab/starterkit-mustache-base) installed by default.
-
-**Please note:** Pattern Lab Node uses [npm](https://www.npmjs.com/) to manage project dependencies. To upgrade the Gulp Edition or to install plug-ins you'll need to be familiar with npm.
-
-### Use npm
-
-`npm` is a dependency management and package system which can pull in all of the Gulp Edition's dependencies for you. To accomplish this:
-
-* download or `git clone` this repository to an install location.
-
-* run the following
+1. Download or 'git clone' this repository to an install location
+2. run the following
 
     ```
-    cd install/location
+    cd install-location
     npm install
     ```
 
 Running `npm install` from a directory containing a `package.json` file will download all dependencies defined within.
 
-#### Install the Gulp Edition of Pattern Lab Node as a Dependency
+Note: `npm` is a dependency management and package system which can pull in all of the Gulp Edition's dependencies for you.
 
-Most people want to run Pattern Lab Node standalone and not as a dependency. If you wish to install as a dependency you can do the following:
 
-Use npm's [`install` command](https://docs.npmjs.com/cli/install) with an argument to install the Gulp Edition into a location of your choosing. In Terminal type:
-
-    cd install/location/
-    npm install edition-node-gulp
-
-This will install the Gulp Edition into a directory called `node_modules` in `install/location/`.
-
-## Getting Started
-
-The Pattern Lab Node - Gulp Edition ships with a [base experience](https://github.com/pattern-lab/starterkit-mustache-base) which serves as clean place to start from scratch with Pattern Lab. But if you want to get rolling with a starterkit of your own, or use the [demo starterkit](https://github.com/pattern-lab/starterkit-mustache-demo) like the one on [demo.patternlab.io](http://demo.patternlab.io), you can do so automatically at time of `npm install` by adding your starterkit to the `package.json` file.
-
-You can also [work with starterkits using the command line](https://github.com/pattern-lab/patternlab-node/wiki/Importing-Starterkits).
-
-## Updating Pattern Lab
-
-To update Pattern Lab please refer to each component's GitHub repository, and the [master instructions for core](https://github.com/pattern-lab/patternlab-node/wiki/Upgrading). The components are listed at the top of the README.
 
 ## Helpful Commands
 
@@ -93,11 +62,3 @@ To watch for changes, re-generate the front-end, and server it via a BrowserSync
     gulp patternlab:serve
 
 BrowserSync should open [http://localhost:3000](http://localhost:3000) in your browser.
-
-### Install a StarterKit
-
-To install a specific StarterKit from GitHub type:
-
-    npm install [starterkit-vendor/starterkit-name]
-
-    gulp patternlab:loadstarterkit --kit=[starterkit-name]
