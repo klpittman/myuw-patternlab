@@ -6,12 +6,24 @@ The MyUW Pattern Lab is based on [Pattern Lab Node - Gulp Edition](https://githu
 
 ## Packaged Components
 
-The Gulp Edition comes with the following components:
+### Pattern Lab Gulp Edition
+The Pattern Lab Gulp Edition comes with the following components:
 
 * `patternlab-node`: [GitHub](https://github.com/pattern-lab/patternlab-node), [npm](https://www.npmjs.com/package/patternlab-node)
 * `patternengine-node-mustache`: [GitHub](https://github.com/pattern-lab/patternengine-node-mustache), [npm](https://www.npmjs.com/package/patternengine-node-mustache)
 * `pattern-lab/styleguidekit-assets-default`: [GitHub](https://github.com/pattern-lab/styleguidekit-assets-default)
 * `pattern-lab/styleguidekit-mustache-default`: [GitHub](https://github.com/pattern-lab/styleguidekit-mustache-default)
+
+### Other Libraries
+
+* LESS CSS: [GitHub](https://github.com/less/less.js)
+* Bootstrap: [GitHub](https://github.com/twbs/bootstrap)
+
+### Fonts
+
+* Font Awesome: [GitHub](https://github.com/FortAwesome/Font-Awesome)
+* [Encode Sans Normal (Semibold and Bold)](https://www.fontsquirrel.com/fonts/encode-sans)
+
 
 ## Prerequisites
 
