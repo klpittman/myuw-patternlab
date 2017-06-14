@@ -63,6 +63,14 @@ gulp.task('pl-copy:css', function () {
     .pipe(browserSync.stream());
 });
 
+
+// LESS Copy
+gulp.task('pl-copy:less', function () {
+  return gulp.src(normalizePath(paths().source.css) + '/*.less')
+    .pipe(gulp.dest(normalizePath(paths().public.css)))
+    .pipe(browserSync.stream());
+});
+
 // Styleguide Copy everything but css
 gulp.task('pl-copy:styleguide', function () {
   return gulp.src(normalizePath(paths().source.styleguide) + '/**/!(*.css)')
@@ -120,6 +128,7 @@ gulp.task('pl-assets', gulp.series(
   'pl-copy:favicon',
   'pl-copy:font',
   'pl-copy:css',
+  'pl-copy:less',
   'pl-copy:styleguide',
   'pl-copy:styleguide-css'
 ));
@@ -191,7 +200,7 @@ function watch() {
   const watchers = [
     {
       name: 'CSS',
-      paths: [normalizePath(paths().source.css, '**', '*.css')],
+      paths: [normalizePath(paths().source.css, '**', '*.css', '*.less')],
       config: { awaitWriteFinish: true },
       tasks: gulp.series('pl-copy:css', reloadCSS)
     },
