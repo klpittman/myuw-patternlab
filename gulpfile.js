@@ -66,8 +66,8 @@ gulp.task('pl-copy:css', function () {
 
 // LESS Copy
 gulp.task('pl-copy:less', function () {
-  return gulp.src(normalizePath(paths().source.css) + '/*.less')
-    .pipe(gulp.dest(normalizePath(paths().public.css)))
+  return gulp.src(normalizePath(paths().source.less) + '/*.less')
+    .pipe(gulp.dest(normalizePath(paths().public.less)))
     .pipe(browserSync.stream());
 });
 
@@ -200,9 +200,12 @@ function watch() {
   const watchers = [
     {
       name: 'CSS',
-      paths: [normalizePath(paths().source.css, '**', '*.css', '*.less')],
+      paths: [
+          normalizePath(paths().source.css, '**', '*.css'),
+          normalizePath(paths().source.less, '*.less')
+      ],
       config: { awaitWriteFinish: true },
-      tasks: gulp.series('pl-copy:css', reloadCSS)
+      tasks: gulp.series('pl-copy:css', 'pl-copy:less', reloadCSS)
     },
     {
       name: 'Styleguide Files',
