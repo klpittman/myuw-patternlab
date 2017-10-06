@@ -1,0 +1,128 @@
+@import (reference) "color.less";
+
+
+@font-base-size: 14px;
+@font-base-lineheight: 24px;
+@font-base-lineheight-ratio: 1.71428571em;
+@font-header-lineheight: 1.2em;
+
+@fontface-base: "Open Sans", Helvetica, Arial, Verdana, sans-serif;
+@fontface-secondary: 'encode_sans_normalbold', sans-serif;
+@fontface-tertiary: 'Roboto', sans-serif;
+
+
+html {
+    font-size: @font-base-size;
+    line-height: @font-base-lineheight;
+}
+
+body {
+    font-family: @fontface-base;
+    line-height: @font-base-lineheight-ratio;
+}
+
+.font-secondary { font-family: @fontface-secondary; }
+.font-tertiary { font-family: @fontface-tertiary; }
+
+
+/* Major Third Type Scale */
+h1 { font-size: 2.441rem; }
+h2 { font-size: 1.953rem; }
+h3 { font-size: 1.563rem; }
+h4 { font-size: 1.25rem; }
+
+
+/* Headings */
+.myuw-heading-page {
+    font-family: @fontface-secondary;
+    font-weight: 600;
+    font-size: 26px;
+    color: #444;
+    margin: 0 0 8px 0;
+}
+
+.myuw-heading-subheading {
+    font-family: @fontface-tertiary;
+    font-weight: 400;
+    font-size: 20px;
+    color: #333;
+    margin: 0;
+}
+
+.myuw-canvas-title {
+    font-family: @fontface-base;
+    font-size: 18px;
+    color: #000;
+}
+
+.myuw-canvas-subheading {
+    font-family: @fontface-base;
+    font-size: 14px;
+    color: #000;
+    font-weight: 500;
+}
+
+.myuw-card-title {
+    font-family: @fontface-secondary;
+    font-size: 24px;
+    color: @uw-metalic-gold;
+}
+
+.myuw-card-subheading {
+    font-family: @fontface-tertiary;
+    font-size: 16px;
+    color: #444;
+    font-weight: 400;
+}
+
+.myuw-card-row-heading {
+    font-family: @fontface-base;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+/*** fonts ***/
+@font-face {
+    font-family: 'encode_sans_normalsemibold';
+    src: url('../fonts/encodesansnormal-600-semibold-webfont.eot');
+    src: url('../fonts/encodesansnormal-600-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/encodesansnormal-600-semibold-webfont.woff') format('woff'),
+         url('../fonts/encodesansnormal-600-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/encodesansnormal-600-semibold-webfont.svg#encode_sans_normalsemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'encode_sans_normalbold';
+    src: url('../fonts/encodesansnormal-700-bold-webfont.eot');
+    src: url('../fonts/encodesansnormal-700-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/encodesansnormal-700-bold-webfont.woff') format('woff'),
+         url('../fonts/encodesansnormal-700-bold-webfont.ttf') format('truetype'),
+         url('../fonts/encodesansnormal-700-bold-webfont.svg#encode_sans_normalbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'encode_sans_normalextrabold';
+    src: url('../fonts/encodesansnormal-800-extrabold-webfont.eot');
+    src: url('../fonts/encodesansnormal-800-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/encodesansnormal-800-extrabold-webfont.woff') format('woff'),
+         url('../fonts/encodesansnormal-800-extrabold-webfont.ttf') format('truetype'),
+         url('../fonts/encodesansnormal-800-extrabold-webfont.svg#encode_sans_normalextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'encode_sans_normalblack';
+    src: url('../fonts/encodesansnormal-900-black-webfont.eot');
+    src: url('../fonts/encodesansnormal-900-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/encodesansnormal-900-black-webfont.woff') format('woff'),
+         url('../fonts/encodesansnormal-900-black-webfont.ttf') format('truetype'),
+         url('../fonts/encodesansnormal-900-black-webfont.svg#encode_sans_normalblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
