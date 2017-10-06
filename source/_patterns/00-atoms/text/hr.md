@@ -1,5 +1,6 @@
 ---
 title: Horizontal Rule
+state: complete
 ---
 
-[Insert description here]
+Use horizontal rules to visually separate content.
