@@ -88,6 +88,32 @@ h4 { font-size: 1.25rem; }
     font-weight: bold;
 }
 
+/*** Styles for basic text elements ***/
+abbr[data-original-title],
+abbr[title] {
+    cursor: help;
+    border-bottom: 1px dotted #777;
+    text-decoration: none;
+}
+
+
+/*** Utility Classes ***/
+
+/* Subdued text and links */
+.myuw-muted {
+    color: #777;
+
+    a&,
+    a {
+        &:hover, &:visited {
+            color: #777;
+            text-decoration: underline;
+        }
+    }
+}
+
+
+
 /*** fonts ***/
 @font-face {
     font-family: 'encode_sans_normalsemibold';
