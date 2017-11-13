@@ -100,11 +100,15 @@ abbr[title] {
 /*** Utility Classes ***/
 
 /* Subdued text and links */
+/** Can be used on an element or as a container for multiples **/
 .myuw-muted {
     color: #777;
 
     a&,
     a {
+        color: #777;
+        text-decoration: none;
+
         &:hover, &:visited {
             color: #777;
             text-decoration: underline;
