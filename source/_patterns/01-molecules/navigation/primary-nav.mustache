@@ -1,9 +1,11 @@
-<nav id="nav" class="c-primary-nav">
+<div class="myuw-menu" role="navigation">
 
-	<ul class="c-primary-nav__list">
+	<ul role="menubar" aria-orientation="vertical" aria-labelledby="menu_toggle">
 
 		{{# primaryNav }}
-		<li class="c-primary-nav__item"><a href="{{ url }}" class="c-primary-nav__link">{{ label }}</a></li>
+		<li role="none">
+			<a href="{{ url }}" role="menuitem" class="c-primary-nav__link">{{ label }}</a>
+		</li>
 		{{/ primaryNav }}
 
 	</ul><!--end c-primary-nav__list-->
