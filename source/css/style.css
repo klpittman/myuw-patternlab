@@ -785,74 +785,10 @@ abbr {
 /**
  * Button
  */
-.c-btn {
-  display: inline-block;
-  background: #3b4a20;
-  color: #fff;
-  line-height: 1;
-  font-weight: bold;
-  padding: 1rem 2rem;
-  border: 0;
-  border-radius: 6px;
-  text-align: center;
-  transition: background 0.2s ease;
-  /**
-   * Disabled button
-   */ }
-  .c-btn:hover, .c-btn:focus {
-    background: #5C832F;
-    color: #fff; }
-  .c-btn.disabled {
-    background: #d9d9d9;
-    color: #808080; }
 
-/**
- * Small button
- */
-.c-btn-small {
-  padding: 0.5em; }
 
-/**
- * Large button
- */
-.c-btn-large {
-  padding: 0.5em;
-  text-transform: uppercase;
-  background: #808080;
-  font-size: 1.4rem;
-  font-weight: normal; }
 
-/**
- * Text button
- */
-.c-text-btn {
-  position: relative;
-  background: none;
-  border: none;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 1.2rem; }
-  .c-text-btn:after {
-    position: absolute;
-    content: "";
-    height: 20px;
-    width: 20px;
-    background: url("../../../images/icon-arrowhead.svg") no-repeat;
-    top: 7px;
-    right: -26px;
-    transition: all 0.2s ease; }
-  .c-text-btn:hover, .c-text-btn:focus {
-    color: #444444; }
-    .c-text-btn:hover:after, .c-text-btn:focus:after {
-      right: -28px; }
-  .c-block-media--small .c-text-btn {
-    font-size: 1rem; }
 
-/**
- * Button on overlay
- */
-.c-btn--overlay {
-  background: #a5a5a5; }
 
 /*------------------------------------*\
     #CAROUSEL
