@@ -1,4 +1,9 @@
-<form method="post" class="c-search-form">
-	<label for="search" class="c-search-form__label is-vishidden">Search the site</label>
-	<input type="search" id="search" class="c-search-form__input" placeholder="Search the site" />
-</form><!-- end c-search-form -->
+<div id="app_search" class="myuw-search">
+	<div class="myuw-wrapper">
+		<form action="/search" method="get" class="uw-search">
+		    <label class="sr-only" for="search-nav">Search for:</label>
+		    <input id="search-nav" name="q" type="text" placeholder="Search for:">
+		    <button type="submit" value="Search">Search</button>
+		</form>
+	</div>
+</div>

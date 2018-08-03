@@ -71,20 +71,20 @@
     ],
     "footerNav" : [
         {
-            "label": "About",
-            "url": "link.pages-about"
-        },
-        {
-            "label": "Blog",
-            "url": "link.pages-blog-index"
-        },
-        {
             "label": "Contact",
-            "url": "link.pages-contact"
+            "url": "mailto:help@uw.edu?subject=MyUW%20Comment,%20Request,%20Suggestion&body=Hello,%0A%0A%3CInclude%20your%20comment%20or%20question%20about%20MyUW%20here%3e%0A%0A%0A%0ANetID%3A%20"
         },
         {
-            "label": "Login",
-            "url": "link.pages-login"
+            "label": "MyUW Help",
+            "url": "https://itconnect.uw.edu/learn/tools/myuw-help-center/"
+        },
+        {
+            "label": "Terms",
+            "url": "http://www.washington.edu/online/terms/"
+        },
+        {
+            "label": "Privacy",
+            "url": "http://www.washington.edu/online/privacy/"
         }
     ],
     "url" : "#",
@@ -229,8 +229,8 @@
 		{
 			"url" : "#",
 			"number" : "10"
-		}				
-	],			
+		}
+	],
     "sectionBlock" : true,
     "textButton" : true,
 	"overlayMessage" : "Let's go on a hike and climb in elevation",
