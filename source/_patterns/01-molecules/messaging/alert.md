@@ -2,4 +2,4 @@
 title: Alert
 ---
 
-[Insert description here]
+Alert shows on all pages, just below the header. 

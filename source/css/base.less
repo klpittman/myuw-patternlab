@@ -66,3 +66,37 @@ hr {
         input { background: none; border: none; }
     }
 }
+
+
+
+
+/*** message banner ***/
+.app-messages {
+	.message-banner {background-color: #558097;color:#fff; //#72adcb too light
+        p {margin:0;}
+	    h2 { font-size: 15px; display: inline; font-weight: bold; }
+		.myuw-banner-msg-close-btn {
+	            margin-top:-36px;float: right;color:#fff;font-size:2em;padding-right:16px;background-color: inherit;border: none;
+	    }
+		.message-text { padding:10px 15px;font-size: 15px;text-align: center;
+            .message {
+                margin-bottom: 1em;
+            }
+            .message:last-child { margin: 0; }
+			a {text-decoration: underline; color:#fff;
+				&.btn-link {padding: 0;margin: 0;vertical-align: 0;font-size: inherit;}
+			}
+			.message-not-ready {font-size: 12px;font-style: italic;display: inline-block;
+				form {display: inline;
+					button {padding: 0;margin: 0;vertical-align: 0;font-size: inherit;text-decoration: underline; color:#fff;}
+				}
+			}
+            .message-loud { // Used to highlight banner messages
+                background: #F5E200;
+                color: blue;
+                a { color: blue; }
+            }
+		}
+	}
+	.override-banner {background-color: #ffbc24;color:#000;} //Gold banner
+}
