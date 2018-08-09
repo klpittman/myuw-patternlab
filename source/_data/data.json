@@ -234,5 +234,8 @@
     "sectionBlock" : true,
     "textButton" : true,
 	"overlayMessage" : "Let's go on a hike and climb in elevation",
-	"overlayAction" : "Find a Hike"
+	"overlayAction" : "Find a Hike",
+    "popoverAction" : "Click to toggle popover",
+    "popoverContent" : "Here's a popover. Shown above the content.",
+    "popoverTitle" : "Dismissible popover"
 }

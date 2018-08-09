@@ -4,3 +4,8 @@ for (i = 0; i < overlayBtn.length; i++) {
   	this.parentNode.classList.add("c-overlay--is-hidden");
   });
 }
+
+
+$(function () {
+  $('[data-toggle="popover"]').popover()
+});
